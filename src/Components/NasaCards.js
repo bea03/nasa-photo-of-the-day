@@ -1,14 +1,24 @@
 import React from 'react';
+import './NasaCards.scss';
+import { Image, Reveal, Container } from 'semantic-ui-react';
 
 function NasaCards(props) {
-    return (
-        <div>
-            <h1>NASA Photo of the Day:</h1>
+      return (
+        <div className="nasa-cards">
+          <Reveal animated='move up'>
+            <Reveal.Content visible>
+              <Image size='large' src='../../../black-sq.png' alt=""></Image>
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <Image size='large' src={props.url} alt=""></Image>
+            </Reveal.Content>
+          </Reveal>
+          <Container className="boxTwo" text>
             <h2>{props.title}</h2>
-            <p>{props.date}</p>
-            <img src={props.url} alt=""></img>
             <p>{props.explanation}</p>
-            <p>{props.copyright}</p>
+            <div className="smaller">{props.date}</div>
+            <div className="smaller">{props.copyright}</div>
+          </Container>
         </div>
     );
 }

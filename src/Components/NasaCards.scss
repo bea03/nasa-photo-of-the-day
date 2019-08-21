@@ -1,0 +1,15 @@
+.nasa-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5em;
+
+  .boxTwo {
+    margin-top: 2.5em;
+    background-color: #eb4c34;
+  }
+
+  .smaller {
+    font-size: 0.9rem;
+  }
+}

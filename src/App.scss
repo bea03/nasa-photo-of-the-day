@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.125em;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Electrolize', sans-serif;
+    letter-spacing: 0.175em;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.125em;
+  }
 }
 
 .App-logo {
@@ -22,11 +41,11 @@
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
